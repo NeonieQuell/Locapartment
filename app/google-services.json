@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "773125764606",
+    "firebase_url": "https://locapartment-84df0-default-rtdb.firebaseio.com",
+    "project_id": "locapartment-84df0",
+    "storage_bucket": "locapartment-84df0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773125764606:android:fbd6d258f827cefbd3fcaf",
+        "android_client_info": {
+          "package_name": "com.neoniequell.locapartment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773125764606-69a0pj5r43riop80g61fedfvf9673c6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neoniequell.locapartment",
+            "certificate_hash": "a5aa602a746f8c1fc09a526f031372a092141e36"
+          }
+        },
+        {
+          "client_id": "773125764606-62jskl894ae0d02cg9u4ejfvl9v1vg96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCdAK_Zpk3IRjJz4SeBTQLljoM92htivU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773125764606-62jskl894ae0d02cg9u4ejfvl9v1vg96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

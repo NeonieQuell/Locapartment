@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dialog_padding"
+    android:paddingBottom="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/tv_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_padding"
+        android:layout_marginEnd="@dimen/dialog_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_regular"
+        android:maxLines="2"
+        android:text="Headline"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/typescale_headline_small" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_headline"
+        android:layout_marginTop="@dimen/dialog_padding_between_title_and_body"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Elevation Tokens: https://m3.material.io/styles/elevation/tokens  -->
+
+    <!--  M3 Shape Scale Tokens.
+    https://m3.material.io/styles/shape/shape-scale-tokens  -->
+    <dimen name="shape_extra_small">4dp</dimen>
+    <dimen name="shape_small">8dp</dimen>
+    <dimen name="shape_medium">12dp</dimen>
+    <dimen name="shape_large">16dp</dimen>
+    <dimen name="shape_extra_large">28dp</dimen>
+    <dimen name="shape_full">999dp</dimen>
+
+    <!--  Typescale Tokens.  -->
+    <dimen name="typescale_body_small">12sp</dimen>
+    <dimen name="typescale_body_medium">14sp</dimen>
+    <dimen name="typescale_body_large">16sp</dimen>
+    <dimen name="typescale_title_small">14sp</dimen>
+    <dimen name="typescale_title_medium">16sp</dimen>
+    <dimen name="typescale_title_large">22sp</dimen>
+    <dimen name="typescale_headline_small">24sp</dimen>
+    <dimen name="typescale_headline_medium">28sp</dimen>
+    <dimen name="typescale_headline_large">32sp</dimen>
+    
+    <dimen name="line_height">24dp</dimen>
+
+    <!--  Padding Tokens.  -->
+    <dimen name="screen_padding">16dp</dimen>
+
+    <!--  Dialog Attributes.  -->
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_min_width">280dp</dimen>
+    <dimen name="dialog_max_width">560dp</dimen>
+    <dimen name="dialog_padding_between_title_and_body">16dp</dimen>
+    <dimen name="dialog_padding_between_body_and_actions">24dp</dimen>
+
+    <!--  FAB Attributes.  -->
+    <dimen name="fab_back_size">48dp</dimen>
+</resources>

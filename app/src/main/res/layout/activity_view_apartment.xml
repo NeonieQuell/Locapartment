@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityViewApartment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        app:fabCustomSize="@dimen/fab_back_size"
+        app:useCompatPadding="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_more_vert"
+        app:fabCustomSize="@dimen/fab_back_size"
+        app:useCompatPadding="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_landlord"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/apartment_img"
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:background="?attr/colorSurfaceVariant"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_example_apartment_1" />
+
+            <RelativeLayout
+                android:id="@+id/rl_apartment_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apartment_img"
+                android:padding="@dimen/screen_padding">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toStartOf="@id/tv_price"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="3"
+                    android:text="@string/lorem_ipsum"
+                    android:textSize="@dimen/typescale_title_large" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_title"
+                    android:layout_alignBottom="@id/tv_title"
+                    android:layout_alignParentEnd="true"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="₱16,000"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="@dimen/typescale_title_large" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toStartOf="@id/tv_price"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxLines="3"
+                    android:text="STI College Global City"
+                    android:textSize="@dimen/typescale_body_large" />
+
+                <ImageView
+                    android:id="@+id/icon_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_check_circle" />
+
+                <TextView
+                    android:id="@+id/tv_availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_alignTop="@id/icon_availability"
+                    android:layout_alignBottom="@id/icon_availability"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toStartOf="@id/tv_price"
+                    android:layout_toEndOf="@id/icon_availability"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Available" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon_availability"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_light"
+                    android:lineHeight="@dimen/line_height"
+                    android:lines="10"
+                    android:text="@string/lorem_ipsum" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_landlord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorSecondaryContainer"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_landlord"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_neo_1"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/btn_chat"
+            android:layout_toEndOf="@id/img_landlord"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_landlord_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:textSize="@dimen/typescale_body_large" />
+
+            <TextView
+                android:id="@+id/tv_owner_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:maxLines="1"
+                android:text="Owner"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:textSize="@dimen/typescale_body_small" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_chat"
+            style="@style/CustomBtnIconOnlyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="2dp"
+            app:icon="@drawable/ic_chat_fill_1"
+            app:iconSize="28dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

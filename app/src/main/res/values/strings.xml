@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Locapartment</string>
+
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="chats">Chats</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="search">Search</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mi turpis, dictum ut tortor et, tristique sagittis tortor. In facilisis egestas lacus, sit amet posuere tortor aliquam in. Mauris rhoncus, lorem eu blandit vestibulum, dui est malesuada turpis, eget dapibus diam erat malesuada odio. Nunc varius cursus lorem, et varius justo venenatis id. Morbi eu erat diam. In hac habitasse platea dictumst. Suspendisse sed dui magna.</string>
+</resources>

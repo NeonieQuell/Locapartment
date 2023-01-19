@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/screen_padding"
+    android:paddingEnd="@dimen/screen_padding"
+    tools:context=".ActivityLauncher">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/typescale_headline_large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Find a Home Thats Perfect For You."
+        android:textSize="@dimen/typescale_title_medium" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/illustration_apartment_rent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Log In"
+        app:strokeColor="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_create_new_account"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:fontFamily="@font/poppins_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Create New Account"
+        app:strokeColor="?attr/colorPrimary" />
+
+</LinearLayout>

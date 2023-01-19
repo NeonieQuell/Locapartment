@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_step_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Step 1 of 1"
+        android:textSize="@dimen/typescale_body_large" />
+
+    <ImageView
+        android:id="@+id/apartment_img"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_below="@id/tv_step_indicator"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorSurfaceVariant"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_select_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apartment_img"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:fontFamily="@font/poppins_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Select Image" />
+
+</RelativeLayout>
